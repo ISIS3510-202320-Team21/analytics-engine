@@ -1,5 +1,9 @@
 # Analytics engine instructions
 
+Texto
+
+# Prediction cron (smart feature) instructions
+
 Run the following commands to install the required libraries:
 
 ```
