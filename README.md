@@ -27,3 +27,10 @@ To launch the app go to the root folder and use:
 ```
 python main.py
 ```
+# How to run the analytics dashboard?
+
+Run the app
+```
+uvicorn main:app --reload
+```
+Then, you should download the dashboard wich is inside the back's repository. After this, you have to input the server's details in order to connect with the postgre server. Once you have done this, the dashboard should run.
