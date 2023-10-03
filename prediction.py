@@ -1,5 +1,5 @@
-import crud
 from collections import defaultdict
+import crud
 
 # get most played sport by user
 def most_played_sport_by_user():

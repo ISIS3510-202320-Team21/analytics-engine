@@ -1,6 +1,6 @@
-import datetime
 from models import User, Notification, Match, Sport
 from database import db
+import datetime
 
 def get_notifications_of_user(user_id: int):
     return db.query(Notification).filter(Notification.owner_id == user_id).all()
