@@ -1,6 +1,7 @@
 import schedule, time, prediction
 
-MEASURE_INTERVAL = 1
+MEASURE_INTERVAL_TWO_DAY = 2
+MEASURE_INTERVAL_FOUR_DAY = 4.5
 
 # Define a job function to be executed
 def most_played_sport_by_user():
@@ -14,8 +15,8 @@ def most_played_sport():
 
 def start():
     # Create a job and schedule it to run every minute
-    schedule.every(MEASURE_INTERVAL).days.do(most_played_sport_by_user)
-    schedule.every(MEASURE_INTERVAL).days.do(most_played_sport)
+    schedule.every(MEASURE_INTERVAL_TWO_DAY).days.do(most_played_sport_by_user)
+    schedule.every(MEASURE_INTERVAL_FOUR_DAY).days.do(most_played_sport)
 
     # Run the scheduled job
     while True:
